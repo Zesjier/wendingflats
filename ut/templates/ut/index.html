@@ -1,4 +1,16 @@
-<body>
-  <h1>Hello! Is Utah! Don't Die</h1>
-  <p>p.s. here be <em>(oh I'm not supposed to say that word...)</em></p>
-</body>
+{% extends 'ut/base.html' %}
+
+
+{% block content %}
+
+<h1>Hello! Is Utah! Don't Die</h1>
+<p>p.s. here be <em>(oh I'm not supposed to say that word...)</em></p>
+
+<div>
+  <h2>Where to eat?</h2>
+  <ul>
+    <li><a href = "{% url 'business' 'coyotekettle' %}">Coyote Kettle</a></li>
+  </ul>
+</div>
+
+{% endblock %}

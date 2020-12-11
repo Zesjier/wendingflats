@@ -1,0 +1,19 @@
+{% load static %}
+
+<head>
+  <link href="{% static 'ut/style.css' %}"/>
+</head>
+
+<body>
+    {% block header %}
+        <h1>Wending Flat, Utah</h1>
+        <a href="{% url 'index' %}">Home</a>
+    {% endblock %}
+
+
+    {% block content %}
+
+        <h1>Error</h1>
+
+    {% endblock %}
+</body>

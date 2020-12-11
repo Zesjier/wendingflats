@@ -1,0 +1,15 @@
+{% extends 'ut/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h2> {{ businessname }} </h2>
+
+    <p class="hours">
+        Opens: {{ openhour | safe }},
+        Closes: {{ closehour | safe }}
+    </p>
+
+    <script src="{% static 'ut/randtimes.js' %}"></script>
+
+{% endblock %}
