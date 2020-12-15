@@ -52,4 +52,11 @@ body {
 
 .headerbuffer{
     height: 6em;
+    margin-bottom: 2em;
+}
+
+
+/* technical */
+.hidden{
+    display: none;
 }

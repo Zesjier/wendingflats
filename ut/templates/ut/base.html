@@ -7,7 +7,7 @@
 <body>
     {% block header %}
     <div class="topbar">
-        <h1>Wending Flat, Utah</h1>
+        <h1>Wending Flats, Utah</h1>
         <div class="dropdown">
             <a href="{% url 'index' %}">Home</a>
         </div>
@@ -24,6 +24,9 @@
             <div class="dropdowncontent">
                 <a href="{% url 'business' 'mcdiarmidauto' %}">McDiarmid Auto</a>
             </div>
+        </div>
+        <div class="dropdown">
+            <a href="{% url 'quiz' %}">Kid's Corner</a>
         </div>
     </div>
 

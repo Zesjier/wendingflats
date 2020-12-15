@@ -1,0 +1,40 @@
+{% extends 'ut/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static 'ut/quiz.css' %}"/>
+
+    <p>Score: <span id="scoretext"></span> Points!</p>
+
+   {% for question in questions %} 
+
+    <section class="question" data-weird="{{ question.is_weird }}">
+        <p class="questiontext">
+            {{ question.text }}
+        </p>
+        <ol>
+        {% for answer in question.quizanswer_set.all %}
+            <li>
+                <button class="answer" data-correct="{{ answer.is_correct }}" data-weird="{{ answer.is_weird }}"> 
+                    {{ answer.text }}
+                </button>
+            </li>
+        {% endfor %}
+        </ol>
+    </section>
+
+   {% endfor %}
+
+    <section id="quizover">
+        <h2>The Quiz is Over Now</h2>
+        <p>
+            This is a snide remark.
+        </p>
+    </section>
+
+
+    <script src="{% static 'ut/quiz.js' %}"> </script>
+
+
+{% endblock %}
