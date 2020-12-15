@@ -1,13 +1,34 @@
 {% load static %}
 
 <head>
-  <link href="{% static 'ut/style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'ut/style.css' %}"/>
 </head>
 
 <body>
     {% block header %}
+    <div class="topbar">
         <h1>Wending Flat, Utah</h1>
-        <a href="{% url 'index' %}">Home</a>
+        <div class="dropdown">
+            <a href="{% url 'index' %}">Home</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Where to Eat?</button>
+            <div class="dropdowncontent">
+                <a href="{% url 'business' 'coyotekettle' %}">Coyote Kettle</a>
+                <a href="{% url 'business' 'deserflowercafe' %}">Desert Flower Cafe</a>
+                <a href="{% url 'business' 'deserflowercafe' %}">Dennie's</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Local Biz</button>
+            <div class="dropdowncontent">
+                <a href="{% url 'business' 'mcdiarmidauto' %}">McDiarmid Auto</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerbuffer">
+    </div>
     {% endblock %}
 
 

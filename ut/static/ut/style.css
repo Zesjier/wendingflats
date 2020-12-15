@@ -1,3 +1,55 @@
 body {
     background-color: antiquewhite;
+    margin: 0;
+}
+
+.topbar {
+    background-color: #40B0F4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.topbar h1{
+    text-align: center;
+    color: #400000;
+}
+
+.dropdown{
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.dropdown a, .dropdown button {
+    text-decoration: none;
+    color: #400000;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    padding: 8px 8px;
+    background-color: #55C0FF;
+    border-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    display: block;
+}
+
+.dropdown a:hover, .dropdown button:hover {
+    background-color: #c0c0ff;
+}
+
+.dropdown .dropdowncontent{
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdowncontent{
+    display: block;
+}
+
+.headerbuffer{
+    height: 6em;
 }
