@@ -53,12 +53,11 @@ body {
   display: flex;
   align-content: space-between;
   margin-top: 10%;
+  flex-wrap: wrap;
 }
 
 .biz {
-  background-color: whitesmoke;
-  opacity: 90%;
-  flex-wrap: wrap;
+  background-color: rgb(245, 245, 245, 0.7);
   width: 600px;
   height: fit-content;
   padding: 2px;
@@ -69,6 +68,11 @@ body {
 .biz_info {
   display: none;
   padding: 20px;
+}
+
+.biz img {
+  max-width: 100%;
+  max-height: 300px;
 }
 
 .biz:hover .biz_info {
