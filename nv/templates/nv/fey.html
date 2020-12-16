@@ -1,0 +1,23 @@
+{% extends 'nv/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'nv/style.css' %}"/>
+{% endblock %}
+
+{% block content %}
+  <div id='fey'>
+    <p>Come traveller, do you desire knowledge from beyond? Are you plagued with doubts?
+      Perhaps you have noticed that things are not as they seem? Madam La Fey cannot answer
+      your questions, but for a small price she can start you on the path to discovery.
+      Ask yourself, traveller, what do you have to lose?
+    </p>
+    <p>
+      If you seek the truth, come and find my little shop in the Salt Flats Casino*
+    </p>
+  </div>
+{% endblock %}
+
+{% block aftercontent %}
+  {% include 'missing_ad.html' %}
+{% endblock %}
