@@ -24,10 +24,32 @@ def index(request):
 def business(request, businessname):
 
   context = base_context(request)
-  context['openhour'] = RAND_TIME.format(start = 5, end = 11)
-  context['closehour'] = RAND_TIME.format(start = 14, end = 2)
 
-  return render(request, 'ut/dining.html', context)
+  if businessname == 'eat':
+    context['openhour'] = RAND_TIME.format(start = 5, end = 11)
+    context['closehour'] = RAND_TIME.format(start = 14, end = 2)
+
+    return render(request, 'ut/dining.html', context)
+
+  elif businessname == 'stay':
+    return render(request, 'ut/stay.html', context)
+
+  elif businessname == 'misc':
+    return render(request, 'ut/misc.html', context)
+
+
+def whattodo(request, place):
+
+  context = base_context(request)
+
+  if place == 'flats':
+    return render(request, 'ut/flats.html', context)
+
+  elif place == 'grave':
+    return render(request, 'ut/grave.html', context)
+
+  elif place == 'air':
+    return render(request, 'ut/air.html', context)
 
 
 def quiz(request):
