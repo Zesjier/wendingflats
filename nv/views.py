@@ -8,3 +8,22 @@ def base_context(request):
 # Create your views here.
 def index(request):
     return render(request, 'nv/index.html', base_context(request))
+
+def gallery(request):
+    return render(request, 'nv/gallery.html', base_context(request))
+
+def games(request):
+    return render(request, 'nv/games.html', base_context(request))
+
+def rec(request):
+    return render(request, 'nv/rec.html', base_context(request))
+
+def dining(request):
+    return render(request, 'nv/dining.html', base_context(request))
+
+def stays(request):
+    return render(request, 'nv/stays.html', base_context(request))
+
+
+
+

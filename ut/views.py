@@ -24,11 +24,10 @@ def index(request):
 def business(request, businessname):
 
   context = base_context(request)
-  context['businessname'] = 'Coyote Kettle'
   context['openhour'] = RAND_TIME.format(start = 5, end = 11)
   context['closehour'] = RAND_TIME.format(start = 14, end = 2)
 
-  return render(request, 'ut/business.html', context)
+  return render(request, 'ut/dining.html', context)
 
 
 def quiz(request):
@@ -51,3 +50,10 @@ def yelp(request, businessname):
 
 def missing(request):
   return render(request, 'ut/missing.html', base_context(request))
+
+
+def blotter(request):
+  return render(request, 'ut/blotter.html', base_context(request))
+
+def history(request):
+  return render(request, 'ut/history.html', base_context(request))

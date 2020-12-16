@@ -1,0 +1,76 @@
+{% extends 'ut/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h2> Coyote Kettle </h2>
+
+    <img src="{% static 'ut/img/coyotekettle.jpg' %}" alt="picture of the coyote kettle cafe">
+
+    <div id="secret1" class="secret"><section><h2>Hi am Secret! #$%^ capitalism!</h2></section></div>
+
+    <p class="hours">
+        Opens: {{ openhour | safe }},
+        Closes: {{ closehour | safe }}
+    </p>
+
+    <p>
+        Have you ever wanted to be in the kind of cafe where everyone remembers your name?
+        The sort of place that feels like warm arms wrapped around you? Look no further.
+        Established in 1932, the Coyote Kettle has the honor of being the very first business
+        to open up in what would eventually become the town of Wending Flats. This cafe is an
+        important landmark of our town, embedded into our cultural identity. Beyond its historical
+        importance, it is a cozy, family-owned cafe that serves as a local favorite and a little
+        slice of home for those just passing through. No visit to Wending Flats could be
+        considered truly complete without a cup of their famous coffee — often claimed to be the
+        very best in the state of Utah. Coyote Kettle is a place so homey and welcoming,
+        you may never want to <span class="secretlink" data-secret="secret1">leave.</span>
+    </p>
+
+    <iframe src="{% url 'ut:yelp' 'Coyote Kettle' %}" title="Reviews"></iframe>
+
+    <h2> Desert Flower Cafe </h2>
+
+    <img src="{% static 'ut/img/coyotekettle.jpg' %}" alt="picture of the desert flower cafe">
+
+    <p class="hours">
+        Opens: 11 AM,
+        Closes: 9 PM
+    </p>
+
+    <p>
+        In 1943 two brothers, Ricardo and Javier Castro, inherited a small plot of undeveloped
+        land just off Wending Flats’ main drag. They decided to use this windfall to build the
+        restaurant they had always talked about running together as children. The brother’s built
+        the entire Desert Flower Cafe themselves, pouring their blood and sweat into its
+        construction. Since its opening in 1945, their delicious food has been a favorite of
+        locals and tourists alike, making the Desert Flower a perfect spot for birthdays,
+        bachelor parties, or a romantic date night! While Javier and Ricardo turned the restaurant
+        over to their respective daughters in 1987, the fruits of their original construction
+        have remained largely untouched.
+    </p>
+
+    <iframe src="{% url 'ut:yelp' 'Desert Flower Cafe' %}" title="Reviews"></iframe>
+
+    <h2> Desert Flower Cafe </h2>
+
+    <img src="{% static 'ut/img/coyotekettle.jpg' %}" alt="picture of Dennie's Cafe">
+
+    <p class="hours">
+        Opens: 9 AM,
+        Closes: 8 PM
+    </p>
+
+    <p>
+        Info About the Dennie's here
+    </p>
+
+    <iframe src="{% url 'ut:yelp' 'Dennies' %}" title="Reviews"></iframe>
+
+    <p>
+        Thank you for supporting our businesses! For more information please visit our <a href="{% url 'ut:badlink' 'chamberofcomerce' %}">Chamber of Comerce</a>
+    </p>
+
+    <script src="{% static 'ut/randtimes.js' %}"></script>
+
+{% endblock %}

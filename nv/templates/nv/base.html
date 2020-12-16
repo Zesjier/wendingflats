@@ -12,10 +12,10 @@
     <div class="dropdown">
         <button class="dropbtn">Where to Go</button>
         <div class="dropdowncontent">
-            <a href="{% url 'nv:index' %}">Gaming</a>
-            <a href="{% url 'nv:index' %}">Recreation</a>
-            <a href="{% url 'nv:index' %}">Dining</a>
-            <a href="{% url 'nv:index' %}">Accomodations</a>
+            <a href="{% url 'nv:games' %}">Gaming</a>
+            <a href="{% url 'nv:rec' %}">Recreation</a>
+            <a href="{% url 'nv:dining' %}">Dining</a>
+            <a href="{% url 'nv:stays' %}">Accomodations</a>
 
             {% if rand < 0.33 %}
                 <a href="{% url 'nv:index' %}">Madam le Fey</a>
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="dropdown">
-        <a href="{% url 'nv:index' %}">Galary</a>
+        <a href="{% url 'nv:gallery' %}">Gallery</a>
     </div>
 </div>
 {% endblock %}

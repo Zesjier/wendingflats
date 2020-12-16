@@ -11,4 +11,6 @@ urlpatterns = [
     path('sidhe/<str:nonsense>', views.badlink, name='badlink'),
     path('reviews/<str:businessname>', views.yelp, name='yelp'),
     path('missing', views.missing, name='missing'),
+    path('blotter', views.blotter, name='blotter'),
+    path('history', views.history, name='history'),
 ]

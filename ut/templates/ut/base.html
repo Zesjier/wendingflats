@@ -7,15 +7,28 @@
         <a href="{% url 'ut:index' %}">Home</a>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Local Biz</button>
+        <a href="{% url 'ut:index' %}">About Our Town</a>
         <div class="dropdowncontent">
-            <a href="{% url 'ut:business' 'eat' %}">Where to Eat?</a>
-            <a href="{% url 'ut:business' 'stay' %}">Where to Stay?</a>
+            <a href="{% url 'ut:history'%}">The Founding Of Wending Flats</a>
+            <a href="{% url 'ut:blotter'%}">Police Blotter</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Support Local Buisnesses</button>
+        <div class="dropdowncontent">
+            <a href="{% url 'ut:business' 'eat' %}">Places to Eat</a>
+            <a href="{% url 'ut:business' 'stay' %}">Places to Stay</a>
             <a href="{% url 'ut:business' 'misc' %}">Misc.</a>
         </div>
     </div>
     <div class="dropdown">
-        <a href="{% url 'ut:business' 'do' %}">What to Do?</a>
+        <button class="dropbtn">What To Do</button>
+        <div class="dropdowncontent">
+            <a href="{% url 'ut:business' 'flats' %}">See The Bonneville Salt Flats</a>
+            <a href="{% url 'ut:business' 'grave' %}">Visit The Wending Flats Graveyard</a>
+            <a href="{% url 'ut:business' 'base' %}">Explore The Morrison Pines Air Base Museum</a>
+        </div>
+
     </div>
     <div class="dropdown">
         <a href="{% url 'ut:quiz' %}">Kid's Corner</a>
