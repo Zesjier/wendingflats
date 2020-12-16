@@ -1,7 +1,4 @@
 /*
- * Julia Kudler
- * 10/21/20
- * CSE 154 AG
  *
  * This is the JS to implement the UI for my text based anventure game
  * "Don't Eat The Food"

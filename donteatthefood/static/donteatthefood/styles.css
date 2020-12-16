@@ -1,8 +1,4 @@
 /*
-  Julia Kudler
-  10/21/2020
-  CSE 154 AG
-
   This is my styles.css wich contains the style for my index.html page,
   wich sets up the appearance of my text based adventure game "Don't eat
   The Food." It attempts to create a whimsical, fae-like aesthetic while
@@ -37,6 +33,11 @@ footer {
   align-content: center;
   max-width: 60%;
   margin: 10% auto;
+}
+
+.go {
+  color: black;
+  text-decoration: none;
 }
 
 .hidden {
@@ -84,7 +85,7 @@ h1, h2 {
   color: rgb(124, 218, 87);
 }
 
-#title p:hover, .choice:hover {
+#title p:hover, .choice:hover, .go:hover {
   color: rgb(185, 218, 172);
 }
 
