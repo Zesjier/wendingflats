@@ -39,6 +39,11 @@ footer {
   margin: 10% auto;
 }
 
+.go {
+  color: black;
+  text-decoration: none;
+}
+
 .hidden {
   display: none;
 }
@@ -84,7 +89,7 @@ h1, h2 {
   color: rgb(124, 218, 87);
 }
 
-#title p:hover, .choice:hover {
+#title p:hover, .choice:hover, .go:hover {
   color: rgb(185, 218, 172);
 }
 
