@@ -48,7 +48,7 @@ def whattodo(request, place):
   elif place == 'grave':
     return render(request, 'ut/grave.html', context)
 
-  elif place == 'air':
+  elif place == 'air' or place == 'base':
     return render(request, 'ut/air.html', context)
 
 
