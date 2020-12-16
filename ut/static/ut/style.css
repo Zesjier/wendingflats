@@ -55,6 +55,13 @@ body {
     margin-bottom: 2em;
 }
 
+.topbartime{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    max-width: 20%;
+    text-align: right;
+}
 
 /* general add-ons */
 .secretlink {

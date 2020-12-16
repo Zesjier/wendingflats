@@ -7,24 +7,32 @@
 <body>
     {% block header %}
     <div class="topbar">
-        <h1>Wending Flats, Utah</h1>
-        <div class="dropdown">
-            <a href="{% url 'index' %}">Home</a>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Local Biz</button>
-            <div class="dropdowncontent">
-                <a href="{% url 'business' 'eat' %}">Where to Eat?</a>
-                <a href="{% url 'business' 'stay' %}">Where to Stay?</a>
-                <a href="{% url 'business' 'misc' %}">Misc.</a>
+        <h1>Wending Flats, {{ state }}</h1>
+
+        <div class="dropdowns">
+            <div class="dropdown">
+                <a href="{% url 'index' %}">Home</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Local Biz</button>
+                <div class="dropdowncontent">
+                    <a href="{% url 'business' 'eat' %}">Where to Eat?</a>
+                    <a href="{% url 'business' 'stay' %}">Where to Stay?</a>
+                    <a href="{% url 'business' 'misc' %}">Misc.</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="{% url 'business' 'do' %}">What to Do?</a>
+            </div>
+            <div class="dropdown">
+                <a href="{% url 'quiz' %}">Kid's Corner</a>
             </div>
         </div>
-        <div class="dropdown">
-            <a href="{% url 'business' 'do' %}">What to Do?</a>
-        </div>
-        <div class="dropdown">
-            <a href="{% url 'quiz' %}">Kid's Corner</a>
-        </div>
+
+        <p class="topbartime">
+            The time in {{ state }} is currently {{ localtime }}, {{ localdate }}
+        </p>
+
     </div>
 
     <div class="headerbuffer">

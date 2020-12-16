@@ -19,5 +19,5 @@ for(let i = 0; i < elements.length; i++) {
 
     let time = Math.floor( (Math.random() * (end-start)) + start ) 
 
-    element.innerText = (( (time-1) % 12) + 1) + ":00 " + (Math.floor(time/12) == 1? "p.m." : "a.m.");
+    element.innerText = (( (time-1) % 12) + 1) + ":00 " + (Math.floor(time/12) == 1? "PM" : "AM");
 }
