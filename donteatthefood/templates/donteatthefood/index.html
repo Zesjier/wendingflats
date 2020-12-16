@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="{% static 'donteatthefood/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'ut/secret.css' %}">
   <script src="{% static 'donteatthefood/index.js' %}"></script>
   <title>Food of the Fae</title>
 </head>
@@ -23,8 +24,18 @@
     <p id="start-btn">~Begin Adventure~</p>
   </section>
 
+  <div id="spoilers" class="secret hidden">
+    <section>
+        <p>
+          7. The sides smell different. The Nevada side is ash and laughter. The Utah side is
+          determination and salt upon salt upon salt. You can smell the change as soon as you’ve
+          crossed the border.
+        </p>
+    </section>
+</div>
+
   <section id="narative" class="hidden">
-    <h1><span class="dont">Don't</span> Eat The Food</h1>
+    <h1><span class="dont" class="secretlink" data-secret=spoilers>Don't</span> Eat The Food</h1>
 
     <section id="game">
       <p id="description">
@@ -59,6 +70,8 @@
   <footer>
     <p>Created By Julia Kudler, 2020</p>
   </footer>
+
+  <script src="{% static 'ut/secret.js' %}"></script>
 
 </body>
 </html>

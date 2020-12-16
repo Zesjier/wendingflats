@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
+<div id="etudennice" class="secret hidden">
+    <section>
+        <p>
+          9. Every side of the Dennie’s is the back of the Dennie’s. Every back of the Dennie’s
+          has a parking lot. The parking lot behind the Dennie’s seems to be the
+          only place you are allowed to go to fight.
+        </p>
+    </section>
+</div>
 
 {% if rand > 0.2 %}
 <!--present day-->
@@ -41,8 +50,8 @@
             </li>
             <li>
                 Wednesday, 10:05pm MDT: A fight broke out between two youths in the parking
-                lot behind Dennice’s Cafe. When asked what they were fighting about,
-                the two simply shrugged.
+                lot behind <span class=secretlink data-secret="etudennice">Dennice’s Cafe</span>.
+                When asked what they were fighting about, the two simply shrugged.
             </li>
         </ul>
     </div>
