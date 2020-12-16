@@ -6,7 +6,6 @@ body {
 }
 
 .topbar {
-  display: flex;
   background-color: rgb(242, 245, 242);
   position: absolute;
   top: 0;
@@ -120,6 +119,5 @@ body {
 }
 
 .pic:hover img{
-  max-height: 510;
-  max-width: 510;
+  background-color: rgb(232, 232, 240);
 }

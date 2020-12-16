@@ -13,4 +13,7 @@ urlpatterns = [
     path('missing', views.missing, name='missing'),
     path('blotter', views.blotter, name='blotter'),
     path('history', views.history, name='history'),
+    path('flats', views.flats, name='flats'),
+    path('grave', views.grave, name='grave'),
+    path('air', views.air, name='air'),
 ]
