@@ -1,0 +1,30 @@
+{% extends 'nv/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'nv/style.css' %}"/>
+{% endblock %}
+
+{% block content %}
+  <h2>Seasonal Events</h2>
+  <div class='event'>
+    <h3>NAME OF CIRCUS</h3>
+  </div>
+  <div class='event'>
+    <h3>NAME OF POKER TOURNAMENT</h3>
+  </div>
+  <div class='event'>
+    <h3>Summer Craft Fair</h3>
+  </div>
+  <div class='event'>
+    <h3>The 10th Joseph Smith Music Festival</h3>
+  </div>
+
+  <h2>Ongoing Events</h2>
+  <div class='event'>
+    <h3>NAME OF PUB CRAWL</h3>
+  </div>
+  <div class='event'>
+    <h3>NAME OF BIKE TOUR</h3>
+  </div>
+{% endblock %}

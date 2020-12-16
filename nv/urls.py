@@ -11,4 +11,6 @@ urlpatterns = [
     path('rec', views.rec, name='rec'),
     path('dining', views.dining, name='dining'),
     path('stays', views.stays, name='stays'),
+    path('about', views.about, name='about'),
+    path('events', views.events, name='events'),
 ]

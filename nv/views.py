@@ -24,6 +24,13 @@ def dining(request):
 def stays(request):
     return render(request, 'nv/stays.html', base_context(request))
 
+def events(request):
+    return render(request, 'nv/events.html', base_context(request))
+
+def about(request):
+    return render(request, 'nv/about.html', base_context(request))
+
+
 
 
 
