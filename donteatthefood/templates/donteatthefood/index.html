@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--
+  Julia Kudler
+  10/21/2020
+  CSE 154 AG
+
+  This is my index.html page wich contains all the building
+  blocks for my text based adventure game "Don't Eat The Food"
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'donteatthefood/styles.css' %}">
+  <script src="{% static 'donteatthefood/index.js' %}"></script>
+  <title>Food of the Fae</title>
+</head>
+
+<body>
+  <section id="title">
+    <h1><span class="dont">Don't</span> Eat The Food</h1>
+    <h2>The Fae Have Many Rules</h2>
+    <p id="start-btn">~Begin Adventure~</p>
+  </section>
+
+  <section id="narative" class="hidden">
+    <h1><span class="dont">Don't</span> Eat The Food</h1>
+
+    <section id="game">
+      <p id="description">
+        Narative goes here!
+      </p>
+      <ol id="choice-block">
+        <li class="choice">choice text here</li>
+      </ol>
+    </section>
+
+    <section id="end" class="hidden">
+      <h2>Name of end</h2>
+      <aside>End <span class="quant">num</span> of three</aside>
+      <p>
+        End text goes here!
+      </p>
+    </section>
+
+    <section id="death" class="hidden">
+      <h2>Sorry you died text</h2>
+      <aside>Death <span class="quant">num</span> of ten</aside>
+      <p>
+        Death text goes here!
+      </p>
+    </section>
+  </section>
+
+  <footer>
+    <p>Created By Julia Kudler, 2020</p>
+  </footer>
+
+</body>
+</html>
