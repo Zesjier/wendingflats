@@ -26,7 +26,8 @@ SECRET_KEY = 'zeubgqz(yuu^u_mjqc$vgl=!xll$$26%mco$p2u3p@b#c_w$l8'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'wendingflats.pythonanywhere.com'
+    'wendingflats.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 
@@ -122,6 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 
