@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from .models import QuizQuestion
+from .models import QuizQuestion, YelpReview
 import datetime
 import time
+import random
 
 RAND_TIME = '<span class="randtime" data-start="{start}" data-end="{end}"></span>'
 
@@ -9,6 +10,7 @@ def base_context(request, tz=7, state = "Utah"):
   context = {
     'localtime': datetime.datetime.now(datetime.timezone(-datetime.timedelta(hours=tz))).strftime("%I:%M %p"),
     'localdate': 'June 11, 2019',
+    'rand' : random.random(),
     'state' : state,
   }
   return context
@@ -39,3 +41,9 @@ def quiz(request):
 
 def badlink(request, nonsense):
   return render(request, 'ut/badlink.html', base_context(request))
+
+
+def yelp(request, businessname):
+  context = base_context(request)
+  context['reviews'] = YelpReview.objects.filter(business__name = businessname)
+  return render(request, 'ut/yelp.html', context)
