@@ -187,7 +187,7 @@
     " further were your brain still connected to your body."]);
     paths.set("2", ["As you approach this fae, you notice that the shimmer in her hair" +
     " comes from little crystals covering each strand. She gives you a sweet smile, and" +
-    " for a moment you cou almost forget where you are were it not for the sharp teeth visible." +
+    " for a moment you cou almost forget where you are were it not for the sharp teeth visible" +
     " behind her transparent lips. \"Well don't you seem interesting,\" she says " +
     " whith just the hint of a laugh in the back of her voice. \"What is your name?\"",
     "Give her your name", "Say nothing", "Give her a fake name"]);
@@ -199,7 +199,7 @@
     " found."]);
     paths.set("23", ["\"Sparrow,\" she says, twirling the fake name you gave her between her " +
     " ever-visible teeth like a tough piece of steak. She seems to ponder it for a moment," +
-    " and then extends one, long hand to you.", "Shake her hand", "Embrace her",
+    " and then extends one long hand to you.", "Shake her hand", "Embrace her",
     "Kiss her hand"]);
     paths.set("231", ["death", "Really Nothing Special", "three", "You have the misfortune" +
     " of becoming dreadfully boring to your fae companions. Those who say that the" +
