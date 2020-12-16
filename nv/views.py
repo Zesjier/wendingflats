@@ -48,6 +48,9 @@ def events(request):
 def about(request):
     return render(request, 'nv/about.html', base_context(request))
 
+def fey(request):
+    return render(request, 'nv/fey.html', base_context(request))
+
 
 
 
