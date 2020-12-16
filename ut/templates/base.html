@@ -1,0 +1,36 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'style.css' %}"/>
+  {% block head %}
+  {% endblock %}
+</head>
+
+<body>
+    {% block header %}
+    <div class="topbar">
+        <h1>Wending Flats, {{ state }}</h1>
+
+        {% block menu %}
+        {% endblock %}
+
+        <p class="topbartime">
+            The time in {{ state }} is currently {{ localtime }}, {{ localdate }}
+        </p>
+
+    </div>
+
+    <div class="headerbuffer">
+    </div>
+    {% endblock %}
+
+
+    {% block content %}
+
+        <h1>Error</h1>
+
+    {% endblock %}
+
+    <script src="{% static 'secrets.js' %}"></script>
+
+</body>

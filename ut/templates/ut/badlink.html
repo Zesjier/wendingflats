@@ -26,9 +26,7 @@
 <h1>Error 404</h1>
 <h2>The site <span class="secretlink" data-secret="secret1">you</span> are <span class="secretlink" data-secret="secret2">looking</span> for does not exist.</h2>
 <p>
-<a href="{% url 'index' %}">Go Home</a>
+<a href="{% url 'ut:index' %}">Go Home</a>
 </p>
-
-<script src="{% static 'ut/secrets.js' %}"></script>
 
 {% endblock %}

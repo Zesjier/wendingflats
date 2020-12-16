@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block menu %}
+<div class="dropdowns">
+    <div class="dropdown">
+        <a href="{% url 'nv:index' %}">About Wending Flats</a>
+    </div>
+    <div class="dropdown">
+        <a href="{% url 'nv:index' %}">Events</a>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Where to Go</button>
+        <div class="dropdowncontent">
+            <a href="{% url 'nv:index' %}">Gaming</a>
+            <a href="{% url 'nv:index' %}">Recreation</a>
+            <a href="{% url 'nv:index' %}">Dining</a>
+            <a href="{% url 'nv:index' %}">Accomodations</a>
+
+            {% if rand < 0.33 %}
+                <a href="{% url 'nv:index' %}">Madam le Fey</a>
+            {% endif %}
+
+        </div>
+    </div>
+    <div class="dropdown">
+        <a href="{% url 'nv:index' %}">Galary</a>
+    </div>
+</div>
+{% endblock %}

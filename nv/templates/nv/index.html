@@ -1,0 +1,10 @@
+{% extends 'nv/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'nv/style.css' %}"/>
+{% endblock %}
+
+{% block content %}
+    <p><em>Not to be confuse with <a href="{% url 'ut:index' %}">Wending Flats, Utah</a></em></p>
+{% endblock %}

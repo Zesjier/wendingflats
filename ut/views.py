@@ -5,11 +5,11 @@ import time
 
 RAND_TIME = '<span class="randtime" data-start="{start}" data-end="{end}"></span>'
 
-def base_context(request):
+def base_context(request, tz=7, state = "Utah"):
   context = {
-    'localtime': datetime.datetime.now(datetime.timezone(-datetime.timedelta(hours=7))).strftime("%I:%M %p"),
+    'localtime': datetime.datetime.now(datetime.timezone(-datetime.timedelta(hours=tz))).strftime("%I:%M %p"),
     'localdate': 'June 11, 2019',
-    'state' : 'Utah',
+    'state' : state,
   }
   return context
 
