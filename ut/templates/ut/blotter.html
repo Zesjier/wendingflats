@@ -6,6 +6,8 @@
 {% endblock %}
 
 {% block content %}
+
+{% if rand > 0.2 %}
 <!--present day-->
     <div class='blotter'>
         <ul>
@@ -28,7 +30,7 @@
             </li>
         </ul>
     </div>
-
+{% else %}
     <!--1972-->
     <div class='blotter'>
         <ul>
@@ -48,4 +50,6 @@
             </li>
         </ul>
     </div>
+{% endif %}
+
 {% endblock %}
