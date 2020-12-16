@@ -63,6 +63,27 @@ body {
     text-align: right;
 }
 
+/* Context styles */
+.content img{
+    max-height: 256px;
+}
+
+.content {
+    margin: 32px;
+}
+
+.content section {
+    margin-top: 64px;
+}
+
+.content iframe{
+    margin-left: 10%;
+    width: 80%;
+    height: 13em;
+}
+
+
+
 /* general add-ons */
 .secretlink {
     cursor: pointer;
