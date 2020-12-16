@@ -5,7 +5,15 @@
 
     <link rel="stylesheet" href="{% static 'ut/quiz.css' %}"/>
 
+    <div id="quizsecret" class="secret hidden">
+        <section>
+            <p>Some nights stay up wishing these walls could be a castle. Some nights I wisht they'd just fall.</p>
+        </section>
+    </div>
+
     <p>Score: <span id="scoretext"></span> Points!</p>
+
+    <h2>Kid's Corner<span class="secretlink" data-secret="quizsecret">!</span></h2>
 
    {% for question in questions %}
 
