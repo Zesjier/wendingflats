@@ -82,11 +82,15 @@
 
         <iframe src="{% url 'ut:yelp' 'Dennies' %}" title="Reviews"></iframe>
 
+    </section>
+
+    <section>
+        <br>
         <p>
             Thank you for supporting our businesses! For more information please visit our <a href="{% url 'ut:badlink' 'chamberofcomerce' %}">Chamber of Comerce</a>
         </p>
-
-        <script src="{% static 'ut/randtimes.js' %}"></script>
     </section>
+
+    <script src="{% static 'ut/randtimes.js' %}"></script>
 
 {% endblock %}
