@@ -47,3 +47,7 @@ def yelp(request, businessname):
   context = base_context(request)
   context['reviews'] = YelpReview.objects.filter(business__name = businessname)
   return render(request, 'ut/yelp.html', context)
+
+
+def missing(request):
+  return render(request, 'ut/missing.html', base_context(request))

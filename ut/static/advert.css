@@ -1,0 +1,12 @@
+.content {
+    float: left;
+}
+
+.advert {
+    padding: 16px;
+    width: 10%;
+    /*height: 70%;*/
+    background-color: gray;
+    margin-right: 16px;
+    float: right;
+}

@@ -10,4 +10,5 @@ urlpatterns = [
     path('quiz', views.quiz, name='quiz'),
     path('sidhe/<str:nonsense>', views.badlink, name='badlink'),
     path('reviews/<str:businessname>', views.yelp, name='yelp'),
+    path('missing', views.missing, name='missing'),
 ]

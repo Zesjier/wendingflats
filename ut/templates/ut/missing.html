@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'ut/missing.css' %}"/>
+</head>
+
+<body>
+
+    <h1>A Woman is Missing</h1>
+    <p>Can you help us find her?</p>
+
+
+    <script src="{% static 'secrets.js' %}"></script>
+
+    <p>Please contact our <a href="{% url 'ut:badlink' 'policedept' %}">Police Department</a> with any information you may have.</p>
+
+</body>
+
+</html>

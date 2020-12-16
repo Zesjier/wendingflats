@@ -25,10 +25,15 @@
     {% endblock %}
 
 
+    <div class="content">
     {% block content %}
 
         <h1>Error</h1>
 
+    {% endblock %}
+    </div>
+
+    {% block aftercontent %}
     {% endblock %}
 
     <script src="{% static 'secrets.js' %}"></script>
