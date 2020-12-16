@@ -1,7 +1,6 @@
 body {
     background-color: antiquewhite;
     margin: 0;
-    text-align: center;
 }
 
 .topbar {
@@ -115,14 +114,6 @@ body {
     width: 60%;
     padding: 5%;
     background-color: cornsilk;
-}
-
-p {
-    margin: 0% 20%;
-}
-
-li {
-    text-align: left;
 }
 
 .blotter {
