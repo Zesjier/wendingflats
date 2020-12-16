@@ -25,7 +25,9 @@ SECRET_KEY = 'zeubgqz(yuu^u_mjqc$vgl=!xll$$26%mco$p2u3p@b#c_w$l8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'wendingflats.pythonanywhere.com'
+]
 
 
 # Application definition
