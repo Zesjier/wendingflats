@@ -1,0 +1,101 @@
+/*
+  Julia Kudler
+  10/21/2020
+  CSE 154 AG
+
+  This is my styles.css wich contains the style for my index.html page,
+  wich sets up the appearance of my text based adventure game "Don't eat
+  The Food." It attempts to create a whimsical, fae-like aesthetic while
+  prioritizing readability and utility.
+*/
+
+body {
+  font-family: "Cambria", serif;
+  background-image: url("./img/moss.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 30px;
+  opacity: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title, footer {
+  text-align: center;
+  margin-top: 25%;
+}
+
+#narative {
+  background-color: rgb(102, 124, 106);
+  border: 5px rgb(7, 49, 7) solid;
+  opacity: 80%;
+  align-content: center;
+  max-width: 60%;
+  margin: 10% auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#death {
+  background-color: rgb(83, 3, 3);
+  border: 2px black solid;
+}
+
+#end {
+  background-color: rgb(174, 223, 174);
+  border: 2px rgb(152, 202, 128) solid;
+}
+
+#choice-block, #narative, #death, #end {
+  padding: 10px 50px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+#choice-block, footer {
+  border: 1px rgb(7, 49, 7) solid;
+  background-color: rgb(147, 184, 154);
+}
+
+h1, h2 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#narative h1 {
+  color: rgb(21, 78, 21);
+  font-size: 24pt;
+}
+
+#title h1 {
+  color: rgb(124, 146, 62);
+  font-size: 50pt;
+  margin: 0cm;
+}
+
+#title p {
+  font-style: oblique;
+  color: rgb(124, 218, 87);
+}
+
+#title p:hover, .choice:hover {
+  color: rgb(185, 218, 172);
+}
+
+.dont {
+  opacity: 0%;
+}
+
+.dont:hover {
+  opacity: 100%;
+}
+
+.dont, #title h2 {
+  color: whitesmoke;
+}

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'donteatthefood.apps.DonteatthefoodConfig',
     'nv.apps.NvConfig',
     'ut.apps.UtConfig',
     'django.contrib.admin',
