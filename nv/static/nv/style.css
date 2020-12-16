@@ -6,7 +6,6 @@ body {
 }
 
 .topbar {
-  display: flex;
   background-color: rgb(242, 245, 242);
   position: absolute;
   top: 0;
@@ -89,11 +88,10 @@ body {
   background-color: beige;
 }
 
-#about {
+#about, .event_wrap{
   background-color: rgb(208, 208, 216);
   padding: 20px;
-  width: fit-content;
-  height: fit-content;
+  max-width: 800px;
   margin: auto;
   margin-top: 5%;
   opacity: 80%;
@@ -103,14 +101,23 @@ body {
 
 #gallery {
   display: flex;
-  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+#gallery .pic{
+  margin: 10px;
+  background-color: rgb(208, 208, 216);
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
 }
 
 #gallery img{
-  flex-wrap: wrap;
-  max-height: 600px;
-  max-width: 400px;
-  background-color: rgb(208, 208, 216);
+  max-height: 500px;
+  max-width: 500px;
   padding: 5px;
-  margin: 10px;
+}
+
+.pic:hover img{
+  background-color: rgb(232, 232, 240);
 }
