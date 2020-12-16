@@ -6,12 +6,20 @@
 {% endblock %}
 
 {% block content %}
+
+  <div id='enola' class='secret hidden'>
+    <section>
+    <h2>Hi am Enlona</h2>
+    <p>Am smart woman do smart things went out on flats to run oops here they are.</p>
+    </section>
+  </div>
+
   <div id='gallery'>
     <div class='pic'>
       <img src="{% static 'nv/img/craps.jpg' %}" alt="a lively game of craps">
     </div>
-    <div class='pic'>
-      <img src="{% static 'nv/img/enola.jpg' %}" alt="a picture of enola grey at a bar">
+    <div class='pic' >
+      <img class='secretlink' data-secret='enola' src="{% static 'nv/img/enola.jpg' %}" alt="a picture of enola grey at a bar">
     </div>
     <div class='pic'>
       <img src="{% static 'nv/img/drag.jpg' %}" alt="a highway going through a small town">
