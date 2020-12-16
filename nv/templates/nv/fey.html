@@ -1,0 +1,38 @@
+{% extends 'nv/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'nv/style.css' %}"/>
+{% endblock %}
+
+{% block content %}
+  <div id='fey'>
+    <p>Come traveller, do you desire knowledge from beyond? Are you plagued with doubts?
+      Perhaps you have noticed that things are not as they seem? Madam La Fey cannot answer
+      your questions, but for a small price she can start you on the path to discovery.
+      Ask yourself, traveller, what do you have to lose?
+    </p>
+    <p>
+      If you seek the truth, come and find my little shop in the Salt Flats Casino*
+    </p>
+    <h6>Testimonials</h6>
+    <ul>
+      <li>
+        She won't tell you what you what you want to hear, but she'll tell you what you need
+        to know. - Joseph Smith (no relation)
+      </li>
+      <li>If you find yourself in Wending Flats for any reason, go to see Madam La Fey. If you can’t
+        find her, don’t try asking. Keep looking, behind curtains, under chairs, in bathroom stalls.
+        Her predictions seem trustworthy, if intentionally obfuscating. - Enola Gray
+      </li>
+      <li>
+        I am not the same person I was when I walked in. I am not sure if I should be greatful
+        or terrified. - Conner Graves
+      </li>
+    </ul>
+    <aside>
+      Madam La Fey is not an employee of, sponsored by, or in any other
+      way associated with the Salt Flats Casino.
+    </aside>
+  </div>
+{% endblock %}
