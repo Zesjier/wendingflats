@@ -1,0 +1,9 @@
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.content h1, .content h2 {
+    margin-top: 64px;
+    border-bottom: 4px solid black ;
+}
