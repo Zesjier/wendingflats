@@ -10,3 +10,7 @@
     margin-right: 16px;
     float: right;
 }
+
+.advert img {
+    max-width: 100%;
+}
