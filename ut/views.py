@@ -75,7 +75,10 @@ def missing(request):
 
 
 def blotter(request):
-  return render(request, 'ut/blotter.html', base_context(request))
+  context = base_context(request)
+  context['localdate'] = context['localdate'] if context['rand'] > 0.2 else 'June 11th, 1972'
+  return render(request, 'ut/blotter.html', context)
+
 
 def history(request):
   return render(request, 'ut/history.html', base_context(request))
