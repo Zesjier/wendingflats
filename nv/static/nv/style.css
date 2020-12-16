@@ -1,0 +1,116 @@
+body {
+  font-family: 'Cambria', serif;
+  background-image: url('./img/highway.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.topbar {
+  display: flex;
+  background-color: rgb(242, 245, 242);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  color: rgb(9, 6, 20);
+}
+
+.topbar h1, .dropdown a, .dropdown button {
+  color: rgb(9, 6, 20);
+}
+
+.dropdown{
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  border-left: 1px solid rgb(59, 59, 59);
+}
+
+.dropdown a, .dropdown button {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  padding: 8px 8px;
+  background-color: rgb(240, 240, 240);
+  border-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  display: block;
+}
+
+.dropdown a:hover, .dropdown button:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.biz_cards {
+  display: flex;
+  align-content: space-between;
+  margin-top: 10%;
+}
+
+.biz {
+  background-color: whitesmoke;
+  opacity: 90%;
+  flex-wrap: wrap;
+  width: 600px;
+  height: fit-content;
+  padding: 2px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+
+.biz_info {
+  display: none;
+  padding: 20px;
+}
+
+.biz:hover .biz_info {
+  display: block;
+}
+
+#home_nv {
+  margin-top: 20%;
+}
+
+#home_nv, .biz {
+  text-align: center;
+}
+
+#home_nv h1{
+  font-size: 50pt;
+  color: rgb(220, 236, 234);
+  font-style: italic;
+}
+
+#home_nv aside {
+  background-color: beige;
+}
+
+#about {
+  background-color: rgb(208, 208, 216);
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 5%;
+  opacity: 80%;
+  border: 2px solid rgb(76, 103, 133);
+  border-radius: 20px;
+}
+
+#gallery {
+  display: flex;
+  align-content: space-between;
+}
+
+#gallery img{
+  flex-wrap: wrap;
+  max-height: 600px;
+  max-width: 400px;
+  background-color: rgb(208, 208, 216);
+  padding: 5px;
+  margin: 10px;
+}

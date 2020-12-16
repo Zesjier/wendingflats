@@ -7,7 +7,7 @@
 
     <p>Score: <span id="scoretext"></span> Points!</p>
 
-   {% for question in questions %} 
+   {% for question in questions %}
 
     <section class="question" data-weird="{{ question.is_weird }}">
         <p class="questiontext">
@@ -16,7 +16,7 @@
         <ol>
         {% for answer in question.quizanswer_set.all %}
             <li>
-                <button class="answer" data-correct="{{ answer.is_correct }}" data-weird="{{ answer.is_weird }}"> 
+                <button class="answer" data-correct="{{ answer.is_correct }}" data-weird="{{ answer.is_weird }}">
                     {{ answer.text }}
                 </button>
             </li>
