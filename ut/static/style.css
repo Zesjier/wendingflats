@@ -1,6 +1,7 @@
 body {
     background-color: antiquewhite;
     margin: 0;
+    text-align: center;
 }
 
 .topbar {
@@ -65,7 +66,10 @@ body {
 
 /* Context styles */
 .content img{
-    max-height: 256px;
+    max-height: 500px;
+    max-width: 700px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .content {
@@ -111,6 +115,21 @@ body {
     width: 60%;
     padding: 5%;
     background-color: cornsilk;
+}
+
+p {
+    margin: 0% 20%;
+}
+
+li {
+    text-align: left;
+}
+
+.blotter {
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 /* technical */
