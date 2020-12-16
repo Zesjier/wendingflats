@@ -94,8 +94,17 @@ body {
   font-style: italic;
 }
 
-#home_nv aside {
-  background-color: beige;
+footer {
+  color: beige;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32, 115, 148);
 }
 
 #about, .event_wrap{
