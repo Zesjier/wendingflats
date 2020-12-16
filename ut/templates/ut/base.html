@@ -12,18 +12,15 @@
             <a href="{% url 'index' %}">Home</a>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Where to Eat?</button>
+            <button class="dropbtn">Local Biz</button>
             <div class="dropdowncontent">
-                <a href="{% url 'business' 'coyotekettle' %}">Coyote Kettle</a>
-                <a href="{% url 'business' 'deserflowercafe' %}">Desert Flower Cafe</a>
-                <a href="{% url 'business' 'deserflowercafe' %}">Dennie's</a>
+                <a href="{% url 'business' 'eat' %}">Where to Eat?</a>
+                <a href="{% url 'business' 'stay' %}">Where to Stay?</a>
+                <a href="{% url 'business' 'misc' %}">Misc.</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Local Biz</button>
-            <div class="dropdowncontent">
-                <a href="{% url 'business' 'mcdiarmidauto' %}">McDiarmid Auto</a>
-            </div>
+            <a href="{% url 'business' 'do' %}">What to Do?</a>
         </div>
         <div class="dropdown">
             <a href="{% url 'quiz' %}">Kid's Corner</a>

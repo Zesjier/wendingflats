@@ -1,0 +1,34 @@
+{% extends 'ut/base.html' %}
+{% load static %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+
+<div id="secret1" class="secret">
+    <section>
+        <p>
+            Enola Grey was here.
+        </p>
+    </section>
+</div>
+
+<div id="secret2" class="secret">
+    <section>
+        <p>
+            Run home. Please, <em>just</em> go home. Or go to <em>Salt</em> Lake City. Run out <em>onto</em> the salt flats. Just don't stay here!
+            You don't belong <em>here</em>!
+        </p>
+    </section>
+</div>
+
+<h1>Error 404</h1>
+<h2>The site <span class="secretlink" data-secret="secret1">you</span> are <span class="secretlink" data-secret="secret2">looking</span> for does not exist.</h2>
+<p>
+<a href="{% url 'index' %}">Go Home</a>
+</p>
+
+<script src="{% static 'ut/secrets.js' %}"></script>
+
+{% endblock %}

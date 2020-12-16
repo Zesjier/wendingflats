@@ -26,3 +26,7 @@ def quiz(request):
   }
 
   return render(request, 'ut/quiz.html', context)
+
+
+def badlink(request, nonsense):
+  return render(request, 'ut/badlink.html')
