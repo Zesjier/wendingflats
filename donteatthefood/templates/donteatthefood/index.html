@@ -12,18 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="{% static 'donteatthefood/styles.css' %}">
-  <link rel="stylesheet" href="{% static 'ut/secret.css' %}">
   <script src="{% static 'donteatthefood/index.js' %}"></script>
   <title>Food of the Fae</title>
 </head>
 
 <body>
-  <section id="title">
-    <h1><span class="dont">Don't</span> Eat The Food</h1>
-    <h2>The Fae Have Many Rules</h2>
-    <p id="start-btn">~Begin Adventure~</p>
-  </section>
-
   <div id="spoilers" class="secret hidden">
     <section>
         <p>
@@ -32,10 +25,16 @@
           crossed the border.
         </p>
     </section>
-</div>
+  </div>
+
+  <section id="title">
+    <h1><span class="dont">Don't</span> Eat The Food</h1>
+    <h2 class="secretlink" data-secret="spoilers">The Fae Have Many Rules</h2>
+    <p id="start-btn">~Begin Adventure~</p>
+  </section>
 
   <section id="narative" class="hidden">
-    <h1><span class="dont" class="secretlink" data-secret=spoilers>Don't</span> Eat The Food</h1>
+    <h1><span class="dont">Don't</span> Eat The Food</h1>
 
     <section id="game">
       <p id="description">
@@ -70,8 +69,6 @@
   <footer>
     <p>Created By Julia Kudler, 2020</p>
   </footer>
-
-  <script src="{% static 'ut/secret.js' %}"></script>
-
+  <script src="{% static 'secrets.js' %}"></script>
 </body>
 </html>

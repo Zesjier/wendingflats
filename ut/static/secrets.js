@@ -1,5 +1,5 @@
 /*
-    Whenever a "secretlink" is hovered, shows the element (secret) 
+    Whenever a "secretlink" is hovered, shows the element (secret)
     whose id is the in the secretlinks data-secret field.
     By default, will hide all such secrets
  */
