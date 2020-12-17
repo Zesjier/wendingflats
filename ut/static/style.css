@@ -107,6 +107,7 @@ body {
     height: 100%;
 
     background: #00000080;
+    z-index: 50;
 }
 
 .secret section {

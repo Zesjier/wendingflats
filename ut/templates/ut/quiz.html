@@ -26,8 +26,6 @@
         </section>
     </div>
 
-    <p>Score: <span id="scoretext"></span> Points!</p>
-
     <h2>Kid's Corner<span class="secretlink" data-secret="quizsecret">!</span></h2>
 
    {% for question in questions %}
@@ -50,8 +48,15 @@
    {% endfor %}
 
     <section id="quizover">
-        <h2 class="secretlink" data-secret="endquizsecret">The Quiz is Over Now</h2>
+        <h2>Congradulations! You earned <span id=finalscore></span> points!</h2>
     </section>
+    <section id="weirdover" class="hidden">
+        <p class="secretlink" data-secret="endquizsecret">Do you feel good about your answers?</p>
+        <button>Yes</button>
+        <button>No</button>
+    </section>
+
+    <p id="score_line">Score: <span id="scoretext"></span> Points!</p>
 
 
     <script src="{% static 'ut/quiz.js' %}"> </script>

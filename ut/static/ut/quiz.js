@@ -7,7 +7,13 @@ function refresh() {
     if(question_ind >= 0){
         questions.item(question_ind).classList.remove("hidden");
     }else{
-        document.getElementById("quizover").classList.remove("hidden");
+        if (weird_count < weird_thresh) {
+            document.getElementById("quizover").classList.remove("hidden");
+            document.getElementById("score_line").classList.add("hidden");
+            document.getElementById("finalscore").textContent = score;
+        } else {
+            document.getElementById("weirdover").classList.remove("hidden");
+        }
     }
 }
 
